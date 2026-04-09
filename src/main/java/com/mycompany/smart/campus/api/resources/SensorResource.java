@@ -69,4 +69,21 @@ public class SensorResource {
 
         return Response.status(Response.Status.CREATED).entity(sensor).build();
     }
+    // --- SUB-RESOURCE LOCATOR ---
+    @Path("/{sensorId}/readings")
+    public SensorReadingResource getSensorReadingResource(@PathParam("sensorId") String sensorId) {
+        
+        // If the sensor doesn't exist, block the request
+        if (!db.getSensors().containsKey(sensorId)) {
+            throw new WebApplicationException(
+                Response.status(Response.Status.NOT_FOUND)
+                        .entity("{\"error\":\"Sensor not found\"}")
+                        .type(MediaType.APPLICATION_JSON)
+                        .build()
+            );
+        }
+        
+        // Hand the request off to the child class
+        return new SensorReadingResource(sensorId);
+    }
 }
