@@ -2,7 +2,9 @@ com\mycompany\smart\campus\api\models\Room.class
 com\mycompany\smart\campus\api\resources\RoomResource.class
 com\mycompany\smart\campus\api\DiscoveryResource.class
 com\mycompany\smart\campus\api\config\SmartCampusApp.class
+com\mycompany\smart\campus\api\exceptions\GlobalExceptionMapper.class
 com\mycompany\smart\campus\api\db\DataStore.class
+com\mycompany\smart\campus\api\filters\LoggingFilter.class
 com\mycompany\smart\campus\api\models\SensorReading.class
 com\mycompany\smart\campus\api\resources\SensorResource.class
 com\mycompany\smart\campus\api\Main.class

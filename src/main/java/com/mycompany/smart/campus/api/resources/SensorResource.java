@@ -49,11 +49,7 @@ public class SensorResource {
     public Response registerSensor(Sensor sensor) {
         // 1. Dependency Validation: Does the assigned room exist?
         if (!db.getRooms().containsKey(sensor.getRoomId())) {
-            // NOTE: Returning a standard 400 for now. In Part 5, we upgrade 
-            // this to a custom Exception Mapper returning a 422!
-            return Response.status(Response.Status.BAD_REQUEST)
-                    .entity("{\"error\":\"Validation Failed: The specified roomId does not exist.\"}")
-                    .build();
+            throw new com.mycompany.smart.campus.api.exceptions.LinkedResourceNotFoundException("Validation Failed: The specified roomId does not exist.");
         }
 
         // 2. Generate an ID if one isn't provided

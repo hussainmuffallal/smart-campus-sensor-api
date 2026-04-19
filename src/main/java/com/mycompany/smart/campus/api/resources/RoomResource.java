@@ -62,9 +62,7 @@ public class RoomResource {
                                .anyMatch(sensor -> roomId.equals(sensor.getRoomId()));
         
         if (hasSensors) {
-            return Response.status(Response.Status.CONFLICT)
-                           .entity("{\"error\":\"Cannot delete room. Active sensors assigned.\"}")
-                           .build();
+            throw new com.mycompany.smart.campus.api.exceptions.RoomNotEmptyException("Cannot delete room. Active sensors assigned.");
         }
 
         db.getRooms().remove(roomId);

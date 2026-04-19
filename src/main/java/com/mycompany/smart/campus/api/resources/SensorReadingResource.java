@@ -43,6 +43,14 @@ public class SensorReadingResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response addReading(SensorReading reading) {
+        
+        // 0. State Constraint Validation (MUST HAPPEN FIRST!)
+        com.mycompany.smart.campus.api.models.Sensor parentSensor = db.getSensors().get(sensorId);
+        if (parentSensor != null && "MAINTENANCE".equalsIgnoreCase(parentSensor.getStatus())) {
+            throw new com.mycompany.smart.campus.api.exceptions.SensorUnavailableException("Sensor is currently in maintenance mode and cannot accept new readings.");
+        }
+
+        // Generate IDs
         if (reading.getId() == null || reading.getId().trim().isEmpty()) {
             reading.setId(UUID.randomUUID().toString());
         }
@@ -55,9 +63,7 @@ public class SensorReadingResource {
           .computeIfAbsent(sensorId, k -> new CopyOnWriteArrayList<>())
           .add(reading);
 
-        // 2. NEW: The Mandatory "Side Effect"
-        // Fetch the parent sensor and update its current value
-        com.mycompany.smart.campus.api.models.Sensor parentSensor = db.getSensors().get(sensorId);
+        // 2. The Mandatory "Side Effect" (Updating the current value)
         if (parentSensor != null) {
             parentSensor.setCurrentValue(reading.getValue());
         }
