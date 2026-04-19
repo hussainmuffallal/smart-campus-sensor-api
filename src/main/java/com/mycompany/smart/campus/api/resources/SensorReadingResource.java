@@ -50,9 +50,17 @@ public class SensorReadingResource {
             reading.setTimestamp(System.currentTimeMillis());
         }
 
+        // 1. Save the reading to the history list
         db.getSensorReadings()
           .computeIfAbsent(sensorId, k -> new CopyOnWriteArrayList<>())
           .add(reading);
+
+        // 2. NEW: The Mandatory "Side Effect"
+        // Fetch the parent sensor and update its current value
+        com.mycompany.smart.campus.api.models.Sensor parentSensor = db.getSensors().get(sensorId);
+        if (parentSensor != null) {
+            parentSensor.setCurrentValue(reading.getValue());
+        }
 
         return Response.status(Response.Status.CREATED).entity(reading).build();
     }
