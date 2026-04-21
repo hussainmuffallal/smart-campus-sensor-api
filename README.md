@@ -42,6 +42,27 @@ As per the project constraints, no external database was used. The architecture 
 
 ---
 
+## 💻 Sample cURL Commands
+
+Here are five sample commands to test the API directly from your terminal:
+
+**1. Retrieve all rooms:**
+`curl -X GET http://localhost:8080/api/v1/rooms`
+
+**2. Register a new room:**
+`curl -X POST http://localhost:8080/api/v1/rooms -H "Content-Type: application/json" -d '{"name": "Engineering Lab", "capacity": 40}'`
+
+**3. Register a new sensor:**
+`curl -X POST http://localhost:8080/api/v1/sensors -H "Content-Type: application/json" -d '{"type": "CO2", "status": "ACTIVE", "currentValue": 415.5, "roomId": "LIB-301"}'`
+
+**4. Filter sensors by type:**
+`curl -X GET "http://localhost:8080/api/v1/sensors?type=CO2"`
+
+**5. Add a new sensor reading:**
+`curl -X POST http://localhost:8080/api/v1/sensors/TEMP-001/readings -H "Content-Type: application/json" -d '{"value": 24.5}'`
+
+---
+
 ## 🚀 How to Run Locally
 
 1. **Clone the repository:**
