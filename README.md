@@ -67,7 +67,7 @@ Here are five sample commands to test the API directly from your terminal:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/hussainmuffallal/smart-campus-sensor-api.git](https://github.com/hussainmuffallal/smart-campus-sensor-api.git)
+   git clone https://github.com/hussainmuffallal/smart-campus-sensor-api.git
 
 ---
 

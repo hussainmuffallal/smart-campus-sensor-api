@@ -2,6 +2,12 @@ C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\myc
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\db\DataStore.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\DiscoveryResource.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\GlobalExceptionMapper.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\LinkedResourceNotFoundException.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\LinkedResourceNotFoundExceptionMapper.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\RoomNotEmptyException.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\RoomNotEmptyExceptionMapper.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\SensorUnavailableException.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\exceptions\SensorUnavailableExceptionMapper.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\filters\LoggingFilter.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\Main.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\models\Room.java
