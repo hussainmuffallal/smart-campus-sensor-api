@@ -24,7 +24,7 @@ public class Main {
             final SmartCampusApp app = new SmartCampusApp();
             final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), app);
             
-            System.out.println("🚀 Smart Campus API is running!");
+            System.out.println("Smart Campus API is running!");
             // 2. Adjust the print statement so you can easily click the correct link
             System.out.println("Test it at: " + BASE_URI + "api/v1/"); 
             System.out.println("Hit Ctrl-C to stop it...");
