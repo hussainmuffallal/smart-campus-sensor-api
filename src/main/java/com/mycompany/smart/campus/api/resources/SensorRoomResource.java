@@ -20,7 +20,7 @@ import java.util.UUID;
 @Path("/rooms")
 @Produces(MediaType.APPLICATION_JSON) 
 @Consumes(MediaType.APPLICATION_JSON)
-public class RoomResource {
+public class SensorRoomResource {
     
     private final DataStore db = DataStore.getInstance();
 
