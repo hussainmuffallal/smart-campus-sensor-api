@@ -69,6 +69,16 @@ Here are five sample commands to test the API directly from your terminal:
    ```bash
    git clone https://github.com/hussainmuffallal/smart-campus-sensor-api.git
 
+2. **Open the project** in Apache NetBeans.
+
+3. **Resolve Maven Dependencies** (`pom.xml`).
+
+4. **Run the Server:** 
+    Navigate to `src/main/java/com/mycompany/smart/campus/api/Main.java` and execute the file.
+
+5. **Test the API:** The server runs on `http://localhost:8080/api/v1/`. 
+    Send a `GET` request to `/rooms` to verify the connection.
+
 ---
 
 ## 📝 Architectural & Conceptual Report
