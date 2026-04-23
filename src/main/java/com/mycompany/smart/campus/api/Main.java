@@ -16,7 +16,6 @@ import com.mycompany.smart.campus.api.config.SmartCampusApp;
 import java.net.URI;
 
 public class Main {
-    // 1. Change the base URI to root
     public static final String BASE_URI = "http://localhost:8080/";
     
     public static void main(String[] args) {
@@ -25,7 +24,6 @@ public class Main {
             final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), app);
             
             System.out.println("Smart Campus API is running!");
-            // 2. Adjust the print statement so you can easily click the correct link
             System.out.println("Test it at: " + BASE_URI + "api/v1/"); 
             System.out.println("Hit Ctrl-C to stop it...");
             

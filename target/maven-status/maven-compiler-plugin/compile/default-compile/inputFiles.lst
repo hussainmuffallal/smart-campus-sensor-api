@@ -13,6 +13,6 @@ C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\myc
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\models\Room.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\models\Sensor.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\models\SensorReading.java
-C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\resources\RoomResource.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\resources\SensorReadingResource.java
 C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\resources\SensorResource.java
+C:\Users\Hussa\Documents\NetBeansProjects\smart-campus-api\src\main\java\com\mycompany\smart\campus\api\resources\SensorRoomResource.java
