@@ -12,9 +12,13 @@ package com.mycompany.smart.campus.api.resources;
 import com.mycompany.smart.campus.api.db.DataStore;
 import com.mycompany.smart.campus.api.models.SensorReading;
 
-import jakarta.ws.rs.*;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
