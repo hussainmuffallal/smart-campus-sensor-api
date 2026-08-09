@@ -6,6 +6,25 @@ Built entirely with raw **Java (JAX-RS)** and the **Grizzly HTTP Server** to dem
 
 ---
 
+## 💻 Tech Stack & Architecture
+
+**Core Technologies**
+* **Language:** Java
+* **Framework:** Jakarta RESTful Web Services (JAX-RS / Jersey)
+* **Server:** Grizzly HTTP Server
+* **Build Tool:** Apache Maven
+
+**Architecture & Data Management**
+* **API Design:** RESTful Architecture (incorporating Sub-Resource Locator patterns)
+* **State Management:** Thread-Safe In-Memory Data Store (utilizing `ConcurrentHashMap` and `CopyOnWriteArrayList`)
+* **Data Format:** JSON 
+
+**Development & Testing Tools**
+* **API Testing:** Postman, cURL
+* **Version Control:** Git & GitHub
+
+---
+
 ## 🏗️ Architectural Decisions & Patterns
 
 As per the project constraints, no external database was used. The architecture relies on advanced Java concurrency and RESTful patterns to ensure reliability and thread safety.
